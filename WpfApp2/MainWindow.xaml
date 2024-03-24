@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Grid Example" Height="1000" Width="1000">
+    <Grid ShowGridLines="True" Background="BlanchedAlmond">
+       
+        <!--<Grid.RowDefinitions>
+            --><!-- 100 satır oluşturuyoruz --><!--
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            --><!-- Diğer satırları buraya ekleyin -->
+            <!-- Toplamda 100 satır ekleyin --><!--
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            --><!-- 100 sütun oluşturuyoruz --><!--
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            --><!-- Diğer sütunları buraya ekleyin -->
+            <!-- Toplamda 100 sütun ekleyin --><!--
+        </Grid.ColumnDefinitions>-->
+
+        <!-- Döngü kullanarak her bir hücreyi oluşturuyoruz -->
+        <!-- 100x100'lük bir grid oluşturmak için iki döngü kullanacağız -->
+
+        <!-- Satırlar için döngü -->
+        <!--<ItemsControl Grid.Row="0" Grid.Column="0" Grid.RowSpan="100" Grid.ColumnSpan="100">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    --><!-- Satırları dikey olarak yerleştirmek için StackPanel kullanıyoruz --><!--
+                    <StackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    --><!-- Her satır için bir Grid oluşturuyoruz --><!--
+                    <Grid>
+                        --><!-- Sütunlar için döngü --><!--
+                        <ItemsControl Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="100">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    --><!-- Sütunları yatay olarak yerleştirmek için StackPanel kullanıyoruz --><!--
+                                    <StackPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    --><!-- Her sütun için bir Grid oluşturuyoruz --><!--
+                                    <Grid Background="LightGray"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>-->
+    </Grid>
+</Window>
